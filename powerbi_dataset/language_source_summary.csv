@@ -1,0 +1,7 @@
+﻿"Language","SourceType","IsAI","FileCount","TotalLines","CodeLines","CommentLines","BlankLines","AvgCommentDensityPct","TotalFunctionsMethods","TotalClassDefs","AvgComplexityScore","TotalSizeKB"
+"Java","AI","1","18","1419","1078","140","201","13.48","201","12","49.07","43.39"
+"Java","Human","0","18","1151","1015","4","132","0.33","216","12","48.58","30.38"
+"JavaScript","AI","1","21","1234","956","113","165","13.69","104","0","28.65","30.86"
+"JavaScript","Human","0","21","1013","835","28","150","4.34","98","0","25.37","22.32"
+"Python","AI","1","48","4591","3476","325","790","14.48","160","39","38.75","154.15"
+"Python","Human","0","78","3663","2742","133","788","14.15","255","69","23.42","103.81"

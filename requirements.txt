@@ -1,0 +1,17 @@
+streamlit
+joblib
+numpy
+scikit-learn
+requests
+pandas
+matplotlib
+seaborn
+streamlit-webrtc
+av
+opencv-python
+aiortc
+PyPDF2
+python-docx
+spacy
+nltk
+streamlit-ace

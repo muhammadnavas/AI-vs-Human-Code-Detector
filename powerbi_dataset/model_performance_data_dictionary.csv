@@ -1,0 +1,42 @@
+TableName,ColumnName,Description
+model_performance_overall.csv,SnapshotDate,Timestamp when metrics were generated
+model_performance_overall.csv,Language,Programming language being evaluated
+model_performance_overall.csv,ModelKey,Internal model identifier
+model_performance_overall.csv,ModelName,Display name for model
+model_performance_overall.csv,TestSamples,Number of samples in test split
+model_performance_overall.csv,Accuracy,Overall accuracy on test split
+model_performance_overall.csv,PrecisionWeighted,Weighted precision across classes
+model_performance_overall.csv,RecallWeighted,Weighted recall across classes
+model_performance_overall.csv,F1Weighted,Weighted F1 score across classes
+model_performance_overall.csv,PrecisionMacro,Macro precision across classes
+model_performance_overall.csv,RecallMacro,Macro recall across classes
+model_performance_overall.csv,F1Macro,Macro F1 score across classes
+model_performance_by_class.csv,SnapshotDate,Timestamp when metrics were generated
+model_performance_by_class.csv,Language,Programming language being evaluated
+model_performance_by_class.csv,ModelKey,Internal model identifier
+model_performance_by_class.csv,ModelName,Display name for model
+model_performance_by_class.csv,ClassLabel,Class label (ai or human)
+model_performance_by_class.csv,Precision,Precision for the class
+model_performance_by_class.csv,Recall,Recall for the class
+model_performance_by_class.csv,F1,F1 score for the class
+model_performance_by_class.csv,Support,Number of true instances of class in test split
+model_confusion_matrix.csv,SnapshotDate,Timestamp when metrics were generated
+model_confusion_matrix.csv,Language,Programming language being evaluated
+model_confusion_matrix.csv,ModelKey,Internal model identifier
+model_confusion_matrix.csv,ModelName,Display name for model
+model_confusion_matrix.csv,ActualLabel,Actual class label
+model_confusion_matrix.csv,PredictedLabel,Predicted class label
+model_confusion_matrix.csv,Count,Number of predictions for label pair
+model_best_by_language.csv,SnapshotDate,Timestamp when metrics were generated
+model_best_by_language.csv,Language,Programming language being evaluated
+model_best_by_language.csv,ModelKey,Best model key by F1Weighted
+model_best_by_language.csv,ModelName,Best model display name by F1Weighted
+model_best_by_language.csv,TestSamples,Number of samples in test split
+model_best_by_language.csv,Accuracy,Accuracy for best model
+model_best_by_language.csv,F1Weighted,Weighted F1 for best model
+model_best_by_language.csv,PrecisionWeighted,Weighted precision for best model
+model_best_by_language.csv,RecallWeighted,Weighted recall for best model
+model_evaluation_log.csv,SnapshotDate,Timestamp when metrics were generated
+model_evaluation_log.csv,Language,Programming language being evaluated
+model_evaluation_log.csv,Status,Success or failure status
+model_evaluation_log.csv,Message,Evaluation log details
