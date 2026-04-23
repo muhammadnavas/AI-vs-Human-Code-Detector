@@ -83,6 +83,10 @@ for lang in LANGUAGES.keys():
 df = pd.DataFrame(data)
 vectorizers = {}
 for lang in LANGUAGES.keys():
+    lang_df = df[df['language'] == lang]
+    if not lang_df.empty:
+        config = LANG_CONFIGS[lang]
+        vectorizer = TfidfVectorizer(
             analyzer=config['analyzer'],
             ngram_range=config['ngram_range'],
             max_features=config['max_features'],
@@ -181,9 +185,7 @@ for lang, model_data in models.items():
     for model_name, model in model_data['models'].items():
         joblib.dump(model, f"{lang_dir}/{model_name}.pkl")
     
-        joblib.dump(model, f"{lang_dir}/{model_name}.pkl")
-    
-    joblib.dump(model_data['label_encoder'], f"{lang_dir}/label_encoder.pkl\")
+    joblib.dump(model_data['label_encoder'], f"{lang_dir}/label_encoder.pkl")
 
 
 # Save both models + vectorizer
