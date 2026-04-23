@@ -86,7 +86,6 @@ for lang in LANGUAGES.keys():
             analyzer=config['analyzer'],
             ngram_range=config['ngram_range'],
             max_features=config['max_features'],
-            token_pattern=r'(?u)\b\w+\b',
             strip_accents='unicode',
             lowercase=True
         )
@@ -158,7 +157,6 @@ for lang in LANGUAGES.keys():
         subsample=0.8,
         colsample_bytree=0.8,
         random_state=42,
-        use_label_encoder=False,
         eval_metric="logloss"
     )
     xgb_model.fit(X_train, y_train_enc)
