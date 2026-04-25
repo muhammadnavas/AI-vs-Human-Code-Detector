@@ -10,6 +10,8 @@ from sklearn.ensemble import GradientBoostingClassifier
 from xgboost import XGBClassifier
 from sklearn.preprocessing import LabelEncoder
 
+print("\n")
+
 LANGUAGES = {
     'python': '.py',
     'java': '.java',
@@ -146,14 +148,14 @@ for lang in LANGUAGES.keys():
     print(classification_report(y_test, y_pred_rf))
     lang_models['random_forest'] = rf_model
     
-    # --- Gradient Boosting ---
+    print(f"\n🔥 Training Gradient Boosting for {lang}...")
     gb_model = GradientBoostingClassifier(n_estimators=200, learning_rate=0.1, random_state=42)
     gb_model.fit(X_train, y_train)
     y_pred_gb = gb_model.predict(X_test)
     print(classification_report(y_test, y_pred_gb))
     lang_models['gradient_boost'] = gb_model
     
-    # --- XGBoost ---
+    print(f"\n⚡ Training XGBoost for {lang}...")
     xgb_model = XGBClassifier(
         n_estimators=300,
         learning_rate=0.1,
