@@ -1,6 +1,7 @@
 # AI vs Human Code Detector
 
 Machine learning project to classify source code as either AI-generated or human-written.
+It analyzes language patterns and stylistic signals across Python, Java, and JavaScript code.
 
 The project includes:
 - A training pipeline for multiple classifiers
